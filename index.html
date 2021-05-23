@@ -3,21 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Goog fonts:-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Monoton&display=swap" rel="stylesheet">
     <!--Connect HTML with CSS-->
     <link rel="stylesheet" type="text/css" href="style.css">
     <!--end-->
-    <title>Holiday Countdown Page</title>
+    <title>Summer Countdown Page</title>
 </head>
 <body>
-    <h2 id="sample">The Current Time Is</h2>
-    <div id="cTime"></div>
+    <div class="flex-container">
+        <h2 id="sample">The Current Time Is</h2>
+    <div class="flex-one">
+        <div id="dayOfWeek"></div>
+       
+            <div id="cTime"></div>
 
-    <h2 id="sample2"></h2>
-    <div id="cDate"></div>
-    
-    <h2 id="sample3"></h2>
-    <div id="dayOfWeek"></div>
-
+            <h2 id="sample2"></h2>
+            <br>
+            <div id="cDate"></div>
+            
+            <h2 id="sample3"></h2>
+            <br>
+           
+    </div>
+   
+        <h1>Countdown Until Summer Break:</h1>
+    <div class="flex-two">
+      
+        <!--Table-->
+    <br>
+        <table class="container" cellpadding="5px">
+            <tr class="counter">
+                <td id="days"></td>
+                <td id="hours"></td>
+                <td id="minutes"></td>
+                <td id="seconds"></td>
+            </tr>
+            <tr>
+                <td>Days</td>
+                <td>Hours</td>
+                <td>Minutes</td>
+                <td>Seconds</td>
+            </tr> 
+            
+            </table>
+     </div>
+</div>
 <!--Connect JS file to HTML-->
 <!--async defer sync (loading preferences)-->
 <script src="app.js"></script>
